@@ -9,21 +9,19 @@ int main()
 {
   int index;
   string thing;
-  string toDo[LIST_SIZE] = {"hello", "second thing", "third thing", "fourth thing"};
+  string toDo[LIST_SIZE];
  
-  index = 0;
-  while( index < LIST_SIZE )
+  
+  for( index=1; index <= LIST_SIZE; index++ )
   {
     cout<<"Give me a thing to do: ";
     cin>>thing;
     toDo[index] = thing;
-    index++;
   }
-  index = 0;
-  while( index < LIST_SIZE )
+  
+  for( index=1; index <= LIST_SIZE; index++ )
   {
     cout<<toDo[index]<<endl;
-    index++;
   }
   return 0;
 }
